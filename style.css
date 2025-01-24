@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html {
-    scroll-behavior: smooth;
-}
 body {
+    scroll-behavior: smooth;
     font-family: Poppins;
     margin : 0;
     /* height: 5000px; */ /*Untuk Mengecek Fixed Nav */
@@ -56,7 +54,7 @@ nav > ul > a:hover {
     margin-bottom: 48px ;
 }
 .logo {
-    width : 100%;
+    width : 90%;
     padding : 28px;
     position: relative;
     top : 120px;
@@ -100,4 +98,79 @@ nav > ul > a:hover {
     width: 35%;
     height: 100%;
     margin-right : 12px;
+}
+
+.emblem {
+    position: relative;
+    width : 100%;
+    padding-top : 78px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    height : 720px;
+}
+
+.emblem-logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+}
+
+.support {
+    grid-area : 2 / 4 / 3 / 5;  
+}
+
+.marksman {
+    justify-self: center;
+    grid-area : 2 / 2 / 3 / 4;  
+}
+
+.detail-emblem {
+    width : 85%;
+    position: relative;
+    top : 48px;
+    display: flex;
+    justify-content: space-evenly;
+    gap : 12px;
+}
+
+.detail-emblem > .card {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detail-emblem > .card > p {
+    display : none;
+}
+
+.detail-emblem > .card > img {
+    width : 50%;
+}
+
+.detail-emblem > .card > h3 {
+    text-align: center;
+}
+
+.detail-emblem > .card:hover {
+    z-index: 100;
+    position: absolute;
+    width : 100%;
+    flex-direction: row;
+}
+
+.detail-emblem > .card:hover p {
+    display: inline;
+}
+
+.detail-emblem > .card:hover img {
+    width : 120px;
+    height: 120px;
+    align-self: flex-start;
+    margin : 0 24px;
+    align-self: center;
+}
+
+.detail-emblem > .card:hover h3 {
+    margin-left : 48px;
 }
